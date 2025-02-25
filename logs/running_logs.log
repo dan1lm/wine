@@ -31,3 +31,40 @@ Expires: Mon, 24 Feb 2025 04:24:11 GMT
 Source-Age: 0
 
 ]
+[2025-02-25 00:06:23,216: INFO: main: custom logging]
+[2025-02-25 00:06:23,216: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-02-25 00:06:23,217: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-02-25 00:06:23,220: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-25 00:06:23,221: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-02-25 00:06:23,221: INFO: common: created directory at: artifacts]
+[2025-02-25 00:06:23,221: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-02-25 00:06:23,571: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 2E0A:3B5F39:B822D:EFBD9:67BD4FCE
+Accept-Ranges: bytes
+Date: Tue, 25 Feb 2025 05:06:23 GMT
+Via: 1.1 varnish
+X-Served-By: cache-ewr-kewr1740029-EWR
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1740459984.643112,VS0,VE106
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: cc03a6b62fe96c538bd73e005d10b020ab608c2e
+Expires: Tue, 25 Feb 2025 05:11:23 GMT
+Source-Age: 0
+
+]
+[2025-02-25 00:06:23,573: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
