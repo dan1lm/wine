@@ -2,6 +2,12 @@ from pipeline_test import logger
 from pipeline_test.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from pipeline_test.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
 from pipeline_test.pipeline.stage_03_data_transformation import DataTransformationTrainingPipeline
+from pipeline_test.pipeline.stage_04_model_trainer import ModelTrainerTrainingPipeline
+
+
+
+
+
 logger.info("custom logging")
 
 STAGE_NAME = "Data Ingestion Stage"
@@ -26,7 +32,6 @@ except Exception as e:
     raise e
 
 
-
 STAGE_NAME = "Data Transformation Stage"
 try:
     logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
@@ -36,3 +41,14 @@ try:
 except Exception as e:
     logger.exception(e)
     raise e
+
+
+STAGE_NAME = "Model Trainer Stage"
+try:
+   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
+   data_ingestion = ModelTrainerTrainingPipeline()
+   data_ingestion.main()
+   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
